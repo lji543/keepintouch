@@ -3,15 +3,29 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "react": "^16.6.3",
-    "react-dom": "^16.6.3",
-    "react-scripts": "2.1.1"
+    "@curi/react-dom": "^1.1.0",
+    "@curi/router": "^1.0.3",
+    "@hickory/browser": "^1.0.2",
+    "autoprefixer": "^9.1.5",
+    "chokidar-cli": "^1.2.1",
+    "firebase": "^5.5.4",
+    "node-sass-chokidar": "^1.3.3",
+    "postcss-cli": "^6.0.0",
+    "react": "^16.5.2",
+    "react-dom": "^16.5.2",
+    "react-materialize": "^2.4.6",
+    "react-scripts": "2.0.3"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "build-task:scss-compile": "node-sass-chokidar --source-map true src/scss/ -o dist/css",
+    "build-task:autoprefixer": "postcss dist/css/*.css --use autoprefixer -d dist/css",
+    "sass:build": "npm-run-all -p build-task:*",
+    "sass:watch": "chokidar 'src/scss/**/*.scss' -c 'npm run sass:build'",
+    "dev": "npm-run-all -p sass:* start"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -21,5 +35,23 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "node-sass": "^4.9.3",
+    "npm-run-all": "^4.1.3"
+  },
+  "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lji543/keepintouch.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lji543/keepintouch/issues"
+  },
+  "homepage": "https://github.com/lji543/keepintouch#readme"
 }

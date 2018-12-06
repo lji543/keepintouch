@@ -1,0 +1,31 @@
+{
+  "contacts": [
+    {
+      "firstName": "Andrew",
+      "lastName": "Illig",
+      "phoneNumber": "3309983238",
+      "address": "",
+      "birthday": "03/09/1990",
+      "notes": "",
+      "lastContacted": ""
+    },
+    {
+      "firstName": "Eric",
+      "lastName": "Illig",
+      "phoneNumber": "3309983238",
+      "address": "",
+      "birthday": "02/13/1992",
+      "notes": "",
+      "lastContacted": ""
+    },
+    {
+      "firstName": "Kelsey",
+      "lastName": "Weber",
+      "phoneNumber": "4199983238",
+      "address": "",
+      "birthday": "03/02/1989",
+      "notes": "",
+      "lastContacted": ""
+    }
+  ]
+}
