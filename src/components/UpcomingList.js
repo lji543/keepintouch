@@ -8,7 +8,15 @@ export class UpcomingList extends React.Component{
     super(props);
 
     this.state = {
-      contacts: this.props.contacts,
+      contacts: [],
+    }
+  }
+
+  findUpcomingBdays = () => {
+
+    // TODO is this the right conditional? AND/OR tie to a lifecycle fn
+    if (this.state.contacts !== this.props.contacts) {
+      this.setState(prevState => ({contacts: this.props.contacts}))
     }
   }
 
@@ -22,6 +30,7 @@ export class UpcomingList extends React.Component{
   }
 
   render() {
+    this.findUpcomingBdays();
 
     return (
       <List
