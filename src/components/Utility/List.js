@@ -14,6 +14,7 @@ export class List extends React.Component{
   contactList = () => {
     const { listItems } = this.props;
 
+    // TODO need a more specific index if these lists are going to be changed by input
     return (
       listItems.map((item,idx) => {
         return (

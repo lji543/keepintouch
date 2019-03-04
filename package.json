@@ -6,14 +6,14 @@
     "@curi/react-dom": "^1.1.0",
     "@curi/router": "^1.0.3",
     "@hickory/browser": "^1.0.2",
-    "autoprefixer": "^9.1.5",
+    "autoprefixer": "^9.4.2",
     "chokidar-cli": "^1.2.1",
-    "firebase": "^5.5.4",
+    "firebase": "^5.7.0",
     "node-sass-chokidar": "^1.3.3",
     "postcss-cli": "^6.0.0",
-    "react": "^16.5.2",
+    "react": "^16.6.3",
     "react-dom": "^16.5.2",
-    "react-materialize": "^2.4.6",
+    "react-materialize": "^2.5.1",
     "react-scripts": "2.0.3"
   },
   "scripts": {
@@ -38,7 +38,7 @@
   ],
   "devDependencies": {
     "babel-core": "^6.26.3",
-    "node-sass": "^4.9.3",
+    "node-sass": "^4.11.0",
     "npm-run-all": "^4.1.3"
   },
   "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
